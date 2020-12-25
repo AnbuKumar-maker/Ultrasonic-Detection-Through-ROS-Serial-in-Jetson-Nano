@@ -1,0 +1,8 @@
+Step 1 : Open a terminal and type arduino (DO NOT CLOSE THE TERMINAL)
+Step 2 : In Arduino, go to file-open-SingleUltrasonic in the sketch and upload the sketch, I have explained every lines of code in the Sketch. Code is in my GitHub below 
+Step 3 : Open a new terminal and type the command roscore (DO NOT CLOSE THE TERMINAL)
+Step 4 : Open another new terminal to access Jetson Nano USB ports for Serial Communication and type the below command (DO NOT CLOSE THE TERMINAL)
+rosrun rosserial_python serial_node.py /dev/ttyACM0
+Step 5 : Open another new terminal to access Jetson Nano USB ports for Serial Communication and type
+the below command (DO NOT CLOSE THE TERMINAL)
+rostopic echo chatter
